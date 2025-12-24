@@ -26,7 +26,35 @@
     <img src="Tennis.jpg" title="The first grass courts I've played at; this picture is taken by me on a 2024 vacation at Cancun" alt="The first grass courts I've played at; this picture is taken by me on a 2024 vacation at Cancun" width=450px>
   </div>
   <div class="container">
-    <p>I started playing tennis over the summer of my 5th grade year with my coach, Gordon, where I train at the Warren Health and Racquet Club. I've been to tennis camps at the Chris Lewit Tennis Academy and the Garden State Tennis Center. My current rating is a 4.19 (with a 36% reliability), and my best win was against a 3.43 on May 11th, 2024, where I won 6-1 7-5. See moreof my tennis matches on my <a href="https://app.utrsports.net/profiles/3534019?t=2">UTR profile</a></p>
+    <p>I started playing tennis over the summer of my 5th grade year with my coach, Gordon, where I train at the Warren Health and Racquet Club. I've been to tennis camps at the Chris Lewit Tennis Academy and the Garden State Tennis Center. My current rating is a 4.19 (with a 36% reliability), and my best win was against a 3.43 on May 11th, 2024, where I won 6-1 7-5. See more of my tennis matches on my <a href="https://app.utrsports.net/profiles/3534019?t=2">UTR profile</a></p>
   </div>
+  <div class="container game-container">
+    <div class="game-header">
+      <div>
+        <h3>FreeTennis (Browser Edition)</h3>
+        <p>Play a quick rally right in the browser. Use the controls below and try to claim the game before the AI does!</p>
+      </div>
+      <div class="scoreboard" aria-live="polite">
+        <div class="score-label">Player</div>
+        <div class="score-value" id="player-score">0</div>
+        <div class="score-label">AI Opponent</div>
+        <div class="score-value" id="ai-score">0</div>
+        <div class="score-status" id="game-status">Press Space to serve</div>
+      </div>
+    </div>
+    <div class="game-layout">
+      <canvas id="tennis-game" width="900" height="520" aria-label="FreeTennis canvas court"></canvas>
+      <div class="game-controls">
+        <h4>Controls</h4>
+        <ul>
+          <li><strong>Arrow Up / Arrow Down</strong> &mdash; Move your racquet</li>
+          <li><strong>Space</strong> &mdash; Start or pause the rally</li>
+          <li><strong>R</strong> &mdash; Reset the match</li>
+        </ul>
+        <p class="hint">First to four points wins the game. The AI tracks the ball, so keep it guessing with angled shots!</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>

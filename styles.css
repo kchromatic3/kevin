@@ -100,3 +100,90 @@ nav a:hover {
       height: 100%;
       border: 0;
 }
+.game-container {
+  text-align: left;
+}
+
+.game-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.scoreboard {
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px 18px;
+  min-width: 210px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+.score-label {
+  font-family: 'Bitter', serif;
+  font-size: 0.95em;
+  color: #dfe9ff;
+}
+
+.score-value {
+  font-size: 2.2em;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.score-status {
+  font-size: 0.95em;
+  color: #b6d4ff;
+}
+
+.game-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 22px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .game-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+#tennis-game {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 4px solid rgba(255, 255, 255, 0.15);
+  background: linear-gradient(180deg, #0f3a20 0%, #12512a 100%);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.game-controls {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+.game-controls ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.game-controls li {
+  margin-bottom: 10px;
+}
+
+.game-controls strong {
+  color: #b4f1d3;
+}
+
+.hint {
+  font-size: 0.95em;
+  color: #cde7ff;
+  margin-top: 10px;
+}
